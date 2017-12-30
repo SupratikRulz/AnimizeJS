@@ -1,0 +1,26 @@
+# All exclusions are specific to NPM, GIT, IDE and Operating Systems.
+
+# - Do not allow installed node modules to be comitted. Doing `npm install` will bring them to root or other places.
+node_modules
+
+# - Prevent addition of Operating System specific explorer files.
+Thumbs.db
+thumbs.db
+.DS_Store
+
+# - Prevent addition of any type of log files.
+*.log
+
+# - Prevent Visual Studio Code (VS CODE) configurations to be comitted in repository.
+.vscode/
+
+# - Prevent build files from being comitted in repository.
+/out/
+/dist/
+
+# - Prevent different backup files from sourcetree to being comitted in repository.
+*.BACKUP.*
+*.BASE.*
+*.LOCAL.*
+*.REMOTE.*
+*.orig.*
