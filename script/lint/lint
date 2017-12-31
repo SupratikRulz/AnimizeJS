@@ -1,0 +1,28 @@
+# Script to check lint
+
+# Stop on first error
+set -e
+
+path=./src/js/;
+if [ "$file" != "" ]; then
+    path="${file}";
+fi
+
+echo "                                      ";
+echo "    _                                 ";
+echo " \_|_)  o             o               ";
+echo "   |        _  _  _|_     _  _    __, ";
+echo "  _|    |  / |/ |  |  |  / |/ |  /  | ";
+echo " (/\___/|_/  |  |_/|_/|_/  |  |_/\_/|/";
+echo "                                   /| ";
+echo "                                   \| ";
+echo "                                      ";
+
+# Display eslint version
+echo -e "\neslint version: `eslint --version`\n";
+
+# Run test on src
+eslint $path --quiet
+
+# Notify on lint pass
+echo -e "Lint passed! Beer!!";
