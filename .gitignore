@@ -24,3 +24,4 @@ thumbs.db
 *.LOCAL.*
 *.REMOTE.*
 *.orig.*
+*.STACKDUMP
